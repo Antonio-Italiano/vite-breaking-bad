@@ -1,18 +1,15 @@
 <script>
+import { store } from '../data/store'
 export default {
     name: 'AppPokemonCard',
     data() {
-        return {
-        }
+        return store
     },
-    props: {
-        pokemon: Array,
-    }
 }
 </script>
 
 <template>
-    <div class="container">
+    <div class="container p-3">
         <div class="row row-cols-2 row-cols-md-5 row-cols-lg-5">
             <div v-for="p in pokemon" class="col">
                 <img :src="p.imageUrl" :alt="p.name">
@@ -34,6 +31,7 @@ export default {
 
         .col {
             width: calc(20% - 12px);
+            height: 50%;
             border: 2px solid rgba(175, 255, 100, 0.444);
             background-color: rgba(106, 106, 106);
             padding: 10px;
@@ -46,6 +44,7 @@ export default {
 
             img {
                 width: 100%;
+                height: 80%;
             }
         }
     }

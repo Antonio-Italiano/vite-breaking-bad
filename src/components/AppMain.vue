@@ -6,9 +6,6 @@ export default {
         return {
         }
     },
-    props: {
-        pokemon: Array,
-    },
     components: {
         AppPokemonCard
     }
@@ -19,7 +16,7 @@ export default {
     <main class="container mt-5">
         <h1>Pokévue</h1>
         <div class="content p-3 mt-3">
-            <app-pokemon-card :pokemon="pokemon"></app-pokemon-card>
+            <app-pokemon-card></app-pokemon-card>
         </div>
     </main>
 </template>
