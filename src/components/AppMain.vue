@@ -18,7 +18,8 @@ export default {
 <template>
     <main class="container mt-5">
         <h1>Pokévue</h1>
-        <div class="content px-5 py-2 mt-3">
+        <div class="content p-3 mt-3">
+            <app-pokemon-card :pokemon="pokemon"></app-pokemon-card>
         </div>
     </main>
 </template>
@@ -36,7 +37,6 @@ export default {
         height: 70vh;
         width: 80vw;
         border: 10px solid rgb(10, 65, 7);
-        overflow-y: auto;
     }
 }
 </style>
