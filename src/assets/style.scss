@@ -1,0 +1,6 @@
+@use './partials/variables' as *;
+
+body {
+    font-family: $font;
+    background-color: rgb(125, 125, 252);
+}

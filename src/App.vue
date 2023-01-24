@@ -10,9 +10,8 @@ export default {
 </script>
 
 <template>
-
 </template>
 
-<style>
-
+<style lang="scss">
+@use './assets/style.scss'
 </style>
