@@ -31,7 +31,7 @@ export default {
     align-items: center;
 
     .content {
-        height: 70vh;
+        height: 80vh;
         width: 80vw;
         border: 10px solid rgb(10, 65, 7);
     }
